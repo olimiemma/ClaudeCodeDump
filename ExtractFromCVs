@@ -1,40 +1,4 @@
-to_parse = """EMMANUEL OLIMI KASIGAZI
-Email: xiemmanue@gmail.com | Tel: +254 798 648 874
-PROFESSIONAL SUMMARY:
-Experienced AI, web developer and graphics designer with a passion for using technology to
-solve real-world problems. Skilled in Python, SQL, PySpark, Java, AWS, Azure,GNU Linux,
-MacOS, Windows, and Adobe Creative Suite.Proven track record of success in leading and
-managing projects, as well as providing technical support to end-users. Excited about the
-practical applications of technology in solving complex business problems.
-PROFESSIONAL SKILLS: Programming Languages: Python, SQL, PySpark, Java
-Cloud Platforms: Amazon Web Services (AWS), Azure, Google cloud
-Operating Systems: Linux (Mint[daily driver], Ubuntu), MacOS, Windows
-Tools: Langchain,Pyspark, DataBricks, Apache Spark. VS code, IntelliJ, Jupyter/Conda. Prompt
-engineering/fine tuning(Deeplearning-GPT, LLAMA, CLAUDE.). ClickUp, Trello. Unix Terminal
-CLI. FruityLoops. Adobe Creative Suite (Photoshop, Illustrator, InDesign, Audition).
-Other Skills: Graphics Design, People Management, Leadership, Audio Production, web
-Development
-PROFESSIONAL EXPERIENCE:
-Co-Creator / Host "Chalk Radio Presents: Open Learners" Podcast - Massachusetts Institute of
-Technology OpenCourseWare, November 2022 -Present.
-• Cost The Podcast with Micheal Jordan Pilgreen
-• Source Guests, Prep interviews
-• Script and Show notes
-Developer / Designer/ Managing Director - Wazi Group Limited, October 2015 - Present
-• Manage day-to-day business activities, acting as a liaison between clients and service
-providers
-• Design and implement web apps and software projects for clients
-Information Technology & Systems Administrator - SS Allied Consults(South Sudan), Feb 2014
-- Oct 2015
-• Maintain and upgrade on-premise servers and applications
-• Implement data backup and disaster recovery solutions
-• Provide technical support for end-users
-• Graphics Design
-EDUCATION: Bachelor in Information Systems, Makerere University, 2010-2013
-LANGUAGES: English, Swahili, Lunyakitara, Luganda
-LINKS: LinkedIn: [https://www.linkedin.com/in/olimiemma/]
-GitHub: [https://github.com/olimiemma] Others: [MIT News] / [Global]
-Thank You.
+to_parse = """Pastefull CV here or create a script to automate or get full CV
 """
 
 stream = anthropic.completions.create(
