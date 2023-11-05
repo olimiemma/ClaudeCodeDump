@@ -1,0 +1,19 @@
+%%time
+Import requests.
+
+resp =requests.get('https://yourwebistehere.com/')
+html=resp.text
+print('inputs tokens:', anthropic.count_tokens(html))
+
+stream = anthropic.completions.create(
+    prompt=f"{HUMAN_PROMPT} Can you extract the email addresses found in the following html file?.Return them as a bulleted list?{html} \n\n{AI_PROMPT}",
+    max_tokens_to_sample=1000,
+    model="claude-2",
+    stream=True,
+)
+reponse=''
+for completion in stream:
+    response+=completion.completion
+    print(completion.completion, end="", flush=True)
+print('\nOutput tokens:', anthropic.count_tokens(response))
+print('cost:', (anthropic.count_tokens(html)/1000) *0.011 + (anthropic.count_tokens(response)/1000) *0.033)
